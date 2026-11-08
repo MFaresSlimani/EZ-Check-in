@@ -1,16 +1,28 @@
-# ez_check_in
+# EZ Check-in
 
-QR code checking app for GDG Medea
+QR code check-in app built for Google Developer Group (GDG) Medea events such as DevFest and I/O Extended. Organizers scan an attendee's QR code at the door and see their details instantly.
 
-## Getting Started
+> Built in 2023 for live events. Archived; kept as a small, focused example.
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- Camera QR scanning
+- Attendee list loaded from JSON, with a details screen per attendee
+- Works offline at the venue
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Tech stack
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Flutter, `qr_code_scanner`, `path_provider`, Google Fonts.
+
+The bundled `assets/attendees_list.json` contains placeholder data only.
+
+## Run
+
+```bash
+flutter pub get
+flutter run
+```
+
+## License
+
+MIT, see [LICENSE](LICENSE).
